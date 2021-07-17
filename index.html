@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="MyStore - Sua melhor opção multimarcas" <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-    <title>MyStore - Viva e vista seu estilo</title>
+    <meta name="description" content="MyStore - Sua melhor opção multimarcas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_package_v0.16/favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/97e3160b5c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/estilos.css">
+    <title>MyStore - Viva e vista seu estilo</title>
 </head>
 
 <body>
@@ -18,14 +21,37 @@
         <header>
             <div class="conteudo-header">
                 <p class="logo">MY<strong>STORE</strong></p>
-                <div class="conteudo-nav-header">
-                    <p><a href="#produtos">PRODUTOS</a></p>
-                    <p><a href="#footer">CONTATO</a></p>
-                    <p><a href="#footer">SOBRE NÓS</a></p>
-                    <span class="material-icons">
-                        favorite_border
-                    </span>
-                </div>
+                <nav class="menu-container">
+                    <!-- burger menu -->
+                    <input type="checkbox" aria-label="Toggle menu" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+
+                    <!-- menu items -->
+                    <div class="menu">
+                        <ul>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#produtos">
+                                    PRODUTOS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#footer">
+                                    CONTATO
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#footer">
+                                    SOBRE NÓS
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </header>
         <section class="section-one">
@@ -48,7 +74,7 @@
                     <strong>NÃO PERCA NENHUMA NOVIDADE!</strong><br>
                     CADASTRE SEU EMAIL E RECEBA NOSSAS PROMOÇÕES <strong>ANTES DE TODO MUNDO!</strong>
                 </p>
-                <form method="POST" class="input-email" onsubmit="setCredentials(event)">
+                <form method="POST" class="input-email" id="form" onsubmit="setCredentials(event)">
                     <input type="email" id="email">
                     <input type="submit" value="EU QUERO!">
                 </form>
@@ -99,7 +125,7 @@
         </section>
         <footer id="footer">
             <div class="creditos">
-                <p>© Clio Maas- Página desenvolvida como parte do programa Hiring Coders</p>
+                <p class="copyright">© Clio Maas- Página desenvolvida como parte do programa Hiring Coders</p>
                 <div class="links">
                     <a href="https://github.com/cliomaas" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" viewBox="0 0 24 24">

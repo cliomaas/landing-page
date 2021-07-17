@@ -57,6 +57,7 @@ function setCredentials(event) {
     event.preventDefault();
     var inputEmail = document.getElementById("email");
     localStorage.setItem("email", inputEmail.value);
+    document.getElementById("form").reset();
 
 
 }
